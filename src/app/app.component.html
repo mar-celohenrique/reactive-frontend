@@ -1,0 +1,7 @@
+<mat-progress-bar *ngIf="isStreamActive" mode="query" color="warm"></mat-progress-bar>
+
+<app-search-bar (onSearchValueEmit)="onSearchTriggered($event)">
+</app-search-bar>
+
+<app-movie-container [movies]="movies">
+</app-movie-container>

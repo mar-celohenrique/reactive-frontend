@@ -1,0 +1,43 @@
+:host {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  mat-progress-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+
+  app-movie-container {
+    flex: 1;
+    background: #101820ff;
+  }
+}
+
+.container {
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 80%;
+  padding-left: 80px;
+  padding-top: 8%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  padding-left: 100px;
+  align-items: stretch;
+}
+
+.example-card-two {
+  max-width: 400px;
+}

@@ -1,0 +1,9 @@
+<section id="search-bar" [class]="initialView ? '' : 'minimized'">
+    <h2 class="title">Movies</h2>
+    <span class="sub-title">Search for any movies by it's name</span>
+
+    <div class="input-wrapper">
+        <input [(ngModel)]="searchBarInput" (keyup.enter)="onKeyPressInSearchBar()">
+        <span (click)="onKeyPressInSearchBar()" class="material-icons"> search </span>
+    </div>
+</section>
